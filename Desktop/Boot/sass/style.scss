@@ -1,0 +1,124 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:300,400,500,700');
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+
+$textos: Roboto, sans-serif;
+$titulos: "Roboto Slab", serif;
+
+body{
+	font-family: $textos;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: $titulos;
+	font-weigth:700;
+}
+
+body, html{
+	height: 100%;
+}
+/*
+
+header{
+	height: 100%;
+	background: url("http://interfacelift.com/wallpaper/D85be4ab/04149_mountainlake_1440x900.jpg");
+	display: flex;
+	align-items: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment:fixed;
+
+}
+*/
+
+header{
+	position: relative;
+}
+
+.wrapper-text{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+}
+
+h1, h3{
+	color: white;
+	font-size: 70px; 
+	text-shadow: 5px 5px 0 rgba(0,0,0,0.8)
+}
+h3{
+	font-size: 40px;
+}
+.social{
+	display:flex;
+	list-style: none;
+	padding: 0;
+	li{
+		padding: 10px;
+		a{
+			color: #AAA;
+			transition: .5;
+			display: inline-block;
+			span{
+				font-size: 30px;
+			}
+			&:hover{
+				transform: scale(1.4);
+				color:black;
+			}
+		} 
+	}
+}
+
+section{
+	padding: 60px 0;
+	&#curso{
+		.destacado{
+			font-size: 18px;
+			font-weigth: 300;
+			line-height: 25px;
+		}
+	}
+	&#frase{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+31,066dab+100;Web+2.0+Blue+3D+%231 */
+background: #c5deea; /* Old browsers */
+background: -moz-linear-gradient(top, #c5deea 0%, #8abbd7 31%, #066dab 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #c5deea 0%,#8abbd7 31%,#066dab 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #c5deea 0%,#8abbd7 31%,#066dab 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 ); /* IE6-9 */
+	}
+}
+
